@@ -1,0 +1,23 @@
+:root {
+    --background: #242424;
+    --color: white;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[data-theme="dark"] {
+    background: white;
+    background-position: center;
+    background-size: cover;
+    --background-image: url("https://blogger.googleusercontent.com/img/a/AVvXsEgqCer_w1svtRJCNIBTRW-93b-2VHgGvZWN0Ld3VTDVRSbT5ZTCPY9DQQRLmkyv6LhPOJKETol6tgDjMp-xERoiLnIXKMwmJcpzD9JNpf01ynUZjRYzsiP0WSvyR35sV-U157pOehpoqwpVZpgxzKrwJbADiyG8KL_2TzqAGzHxKl4jBRr-S7Ei6wSp6g=w640-h360");
+    background-repeat: no-repeat;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
