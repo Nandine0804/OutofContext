@@ -42,18 +42,19 @@ function Terms() {
       "https://skill-1e6ff-default-rtdb.firebaseio.com/UserData.json",
       options
     );
-    if (res) {
+    if (res && user.length !== 0) {
       alert("Thank you for showing interest for data science!!");
       setUser({
         Name: "",
         Deg: "",
         Sem: "",
         Phone: "",
-        Date:"",
+        Date: "",
       });
-      
+    } else if (user.length.trim() === 0) {
+      console.log("Please enter something");
     } else {
-      alert("ERROR OCCURED.");
+      alert("Something happened..");
     }
   };
   const getData2 = (e) => {
