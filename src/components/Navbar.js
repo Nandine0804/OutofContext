@@ -1,12 +1,11 @@
+import { NavLink } from "react-router-dom";
+import React, { Component } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-// import LinkedInIcon from "@mui/icons-material/LinkedIn";
-// import FacebookIcon from "@mui/icons-material/Facebook";
-// import TwitterIcon from "@mui/icons-material/Twitter";
-import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/img/github.png";
-import navIcon3 from "../assets/img/discord.png";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Terms from "./Terms";
+
 import { useState, useEffect } from "react";
 
 function BasicExample() {
@@ -35,57 +34,41 @@ function BasicExample() {
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
-        <Navbar.Brand className="brand" href="#home">
-          NANDINE
-        </Navbar.Brand>
+        <Navbar.Brand className="brand"><a href="" className="logo">SKILL BREWERY</a></Navbar.Brand>
+
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link
-              href="#home"
-              className={
-                activeState === "home" ? "active navbar-link" : "navbar-link"
-              }
-            >
-              HOME
-            </Nav.Link>
-            <Nav.Link
               href="#about"
               className={
-                activeState === "about" ? "active navbar-link" : "navbar-link"
+                activeState === "home" ? "active navbar-link" : "navbar-link"
               }
             >
               ABOUT
             </Nav.Link>
             <Nav.Link
-              href="#skills"
+              href="#terms"
               className={
-                activeState === "skills" ? "active navbar-link" : "navbar-link"
+                activeState === "terms" ? "active navbar-link" : "navbar-link"
               }
             >
-              SKILLS
+              INTERNSHIP PROGRAMME
             </Nav.Link>
+            
             <Nav.Link
-              href="#projects"
+              href="#feedback"
               className={
-                activeState === "projects"
-                  ? "active navbar-link"
-                  : "navbar-link"
+                activeState === "home" ? "active navbar-link" : "navbar-link"
               }
             >
-              PROJECTS
-            </Nav.Link>
-            <Nav.Link
-              href="#exp"
-              className={
-                activeState === "exp" ? "active navbar-link" : "navbar-link"
-              }
-            >
-              EXPERIENCE
+              FEEDBACK
             </Nav.Link>
           </Nav>
+
           <span className="navbar-text">
-            <div className="social-icon">
+            {/* <div className="social-icon">
               <a href="https://www.linkedin.com/in/nandine-s-s-228032226">
                 <img src={navIcon1} alt=""></img>
               </a>
@@ -95,7 +78,7 @@ function BasicExample() {
               <a href="https://discord.gg/QdDHgrDZ">
                 <img src={navIcon3} alt=""></img>
               </a>
-            </div>
+            </div> */}
             <a href="#contact">
               <button
                 className="button"
@@ -103,10 +86,9 @@ function BasicExample() {
                   console.log("connnect");
                 }}
               >
-                <span>Let's Talk</span>
+                <span>CONTACT </span>
               </button>
             </a>
-            {/* <DarkMode /> */}
           </span>
         </Navbar.Collapse>
       </Container>

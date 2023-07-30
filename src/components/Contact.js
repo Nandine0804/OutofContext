@@ -13,21 +13,21 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_08nwq6l",
-        "template_xg1ncxg",
+        "service_hl0kihu",
+        "template_wiye7ac",
         form.current,
         "wYFoX5Ldbge0wDuxf"
       )
       .then(
         (result) => {
           console.log(result.text);
-          alert('Thanks for connecting. Hope to see you again')
+          alert("Thank you for your opinion.");
         },
         (error) => {
           console.log(error.text);
-          alert('Oops...Try Again')
+          alert("Oops...Something went wrong , Try Again");
         }
-    );
+      );
     e.target.reset();
   };
   return (
@@ -42,7 +42,7 @@ const Contact = () => {
                     isVisible ? "animate__animated animate__zoomIn" : ""
                   }
                   id="cont"
-                  src="https://images.assetsdelivery.com/compings_v2/elenanelelena/elenanelelena1805/elenanelelena180500026.jpg"
+                  src="https://media.licdn.com/dms/image/C560BAQGvOSVAwqtr5A/company-logo_200_200/0/1611205348503?e=2147483647&v=beta&t=n_ucTxDrtkEIaVjab2sgLLWZQ4_e_ASI49jvOAIXTSw"
                   alt="Contact Us"
                 />
               )}
@@ -56,7 +56,8 @@ const Contact = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <h2>Connect with me! Happy to hear your opinions</h2>
+                  <h2>Any trouble you faced? Happy to hear your opinions.</h2>
+
                   <form ref={form} onSubmit={sendEmail}>
                     <Row>
                       <Col size={12} sm={6} className="px-1">
@@ -67,14 +68,7 @@ const Contact = () => {
                           required
                         />
                       </Col>
-                      <Col size={12} sm={6} className="px-1">
-                        <input
-                          type="text"
-                          placeholder="Last Name"
-                          name="userLastName"
-                          required
-                        />
-                      </Col>
+                      
                       <Col size={12} sm={6} className="px-1">
                         <input
                           type="email"
@@ -83,14 +77,7 @@ const Contact = () => {
                           required
                         />
                       </Col>
-                      <Col size={12} sm={6} className="px-1">
-                        <input
-                          type="text"
-                          placeholder="Your Interest?"
-                          name="userInterest"
-                          required
-                        />
-                      </Col>
+                      
                       <Col size={12} className="px-1">
                         <textarea
                           rows="6"
@@ -99,7 +86,7 @@ const Contact = () => {
                           required
                         ></textarea>
                         <button type="submit">
-                          <span>Let's Connect</span>
+                          <span>SUBMIT</span>
                         </button>
                       </Col>
                     </Row>
