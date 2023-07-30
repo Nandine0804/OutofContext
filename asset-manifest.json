@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/OutofContext/static/css/main.42462903.css",
+    "main.js": "/OutofContext/static/js/main.cb147d5c.js",
+    "static/js/787.1ed0c42c.chunk.js": "/OutofContext/static/js/787.1ed0c42c.chunk.js",
+    "static/media/bg.jpg": "/OutofContext/static/media/bg.b9aebab90d43100f732f.jpg",
+    "static/media/img2.png": "/OutofContext/static/media/img2.74f186fcbc2735da38dc.png",
+    "static/media/image.png": "/OutofContext/static/media/image.c3812ce813614a192802.png",
+    "static/media/cyber.png": "/OutofContext/static/media/cyber.da42407ebe4d6429a92b.png",
+    "static/media/data.png": "/OutofContext/static/media/data.2660867dbee9778c2830.png",
+    "static/media/contact.png": "/OutofContext/static/media/contact.bef8502b6e5e35910536.png",
+    "static/media/CentraNo2-Bold.ttf": "/OutofContext/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
+    "static/media/CentraNo2-Medium.ttf": "/OutofContext/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
+    "static/media/CentraNo2-Book.ttf": "/OutofContext/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
+    "static/media/footer-bg.png": "/OutofContext/static/media/footer-bg.7bd67c0f73571d0acc02.png",
+    "static/media/nav-icon3.svg": "/OutofContext/static/media/nav-icon3.08b285abb8e118b52637efa5d65c5367.svg",
+    "index.html": "/OutofContext/index.html",
+    "static/media/youtube.svg": "/OutofContext/static/media/youtube.2207eaf217510d04e086eb354d33aa53.svg",
+    "static/media/facebook.svg": "/OutofContext/static/media/facebook.a974ba9270d0e1972fac1673d80424d1.svg",
+    "static/media/nav-icon1.svg": "/OutofContext/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
+    "main.42462903.css.map": "/OutofContext/static/css/main.42462903.css.map",
+    "main.cb147d5c.js.map": "/OutofContext/static/js/main.cb147d5c.js.map",
+    "787.1ed0c42c.chunk.js.map": "/OutofContext/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.42462903.css",
+    "static/js/main.cb147d5c.js"
+  ]
+}
