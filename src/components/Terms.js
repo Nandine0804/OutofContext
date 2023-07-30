@@ -1,23 +1,26 @@
 import { useState } from "react";
 import "./tabs.css";
 function Terms() {
-
   const [toggleState, setToggleState] = useState(1);
 
   const toggleTab = (index) => {
     setToggleState(index);
   };
 
-
-
-  const [user, setUser] = useState({ Name: '', Deg: '', Sem: '', Phone: '', Date: '' })
+  const [user, setUser] = useState({
+    Name: "",
+    Deg: "",
+    Sem: "",
+    Phone: "",
+    Date: "",
+  });
   let name, value;
   const data = (e) => {
     name = e.target.name;
     value = e.target.value;
-    setUser({...user, [name]: value });
+    setUser({ ...user, [name]: value });
     console.log(user);
-  }
+  };
 
   const getData1 = (e) => {
     const { Name, Deg, Sem, Phone, Date } = user;
@@ -25,20 +28,34 @@ function Terms() {
     const options = {
       method: "POST",
       headers: {
-        'Content-Type':'application/json',
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        Name,Deg,Sem,Phone,Date
-      })
-    }
-    const res = fetch("https://skill-1e6ff-default-rtdb.firebaseio.com/UserData.json", options);
+        Name,
+        Deg,
+        Sem,
+        Phone,
+        Date,
+      }),
+    };
+    const res = fetch(
+      "https://skill-1e6ff-default-rtdb.firebaseio.com/UserData.json",
+      options
+    );
     if (res) {
       alert("Thank you for showing interest for data science!!");
+      setUser({
+        Name: "",
+        Deg: "",
+        Sem: "",
+        Phone: "",
+        Date:"",
+      });
+      
+    } else {
+      alert("ERROR OCCURED.");
     }
-    else {
-      alert("ERROR OCCURED.")
-    }
-  }
+  };
   const getData2 = (e) => {
     const { Name, Deg, Sem, Phone, Date } = user;
     e.preventDefault();
@@ -61,9 +78,17 @@ function Terms() {
     );
     if (res) {
       alert("Thank you for showing interest for cyber secruity!!");
+      setUser({
+        Name: "",
+        Deg: "",
+        Sem: "",
+        Phone: "",
+        Date: "",
+      });
     } else {
       alert("ERROR OCCURED.");
     }
+    e.preventDefault();
   };
   return (
     <div className="terms" id="terms">
@@ -274,62 +299,71 @@ function Terms() {
             </div>
 
             <form method="POST">
-              <div className="tabs__forms">
-                <h4>Kindly fill up these details if you're interested.</h4>
-                <input
-                  type="text"
-                  className="form__name"
-                  placeholder="Your Name"
-                  id="form_name"
-                  name="Name"
-                  value={user.Name}
-                  onChange={data}
-                  required
-                />
-                <input
-                  type="text"
-                  className="form__college"
-                  placeholder="Your Degree and College Name"
-                  id="form_college"
-                  name="Deg"
-                  value={user.Deg}
-                  onChange={data}
-                  required
-                />
-                <input
-                  type="number"
-                  className="form__cur_sem"
-                  placeholder="Current Sem"
-                  id="form_cur_sem"
-                  name="Sem"
-                  value={user.Sem}
-                  onChange={data}
-                  required
-                />
-                <input
-                  type="number"
-                  className="form__number"
-                  placeholder="Your Phone Number"
-                  id="form_number"
-                  name="Phone"
-                  value={user.Phone}
-                  onChange={data}
-                  required
-                />
-                <input
-                  type="date"
-                  className="form__name"
-                  placeholder="When you would like to join dd/mm/yyyy"
-                  id="form_date"
-                  name="Date"
-                  value={user.Date}
-                  onChange={data}
-                  required
-                />
-                <div className="tabs__buttons">
-                  <button type="submit" onClick={getData2}>
-                    <a href="">SUBMIT</a>
-                  </button>
+              <div className="form_con">
+                <div className="tabs__forms">
+                  <h4>Kindly fill up these details if you're interested.</h4>
+                  <input
+                    type="text"
+                    className="form__name"
+                    placeholder="Your Name"
+                    id="form_name"
+                    name="Name"
+                    value={user.Name}
+                    onChange={data}
+                    required
+                  />
+                  <input
+                    type="text"
+                    className="form__college"
+                    placeholder="Your Degree and College Name"
+                    id="form_college"
+                    name="Deg"
+                    value={user.Deg}
+                    onChange={data}
+                    required
+                  />
+                  <input
+                    type="number"
+                    className="form__cur_sem"
+                    placeholder="Current Sem"
+                    id="form_cur_sem"
+                    name="Sem"
+                    value={user.Sem}
+                    onChange={data}
+                    required
+                  />
+                  <input
+                    type="number"
+                    className="form__number"
+                    placeholder="Your Phone Number"
+                    id="form_number"
+                    name="Phone"
+                    value={user.Phone}
+                    onChange={data}
+                    required
+                  />
+                  <input
+                    type="date"
+                    className="form__name"
+                    placeholder="When you would like to join dd/mm/yyyy"
+                    id="form_date"
+                    name="Date"
+                    value={user.Date}
+                    onChange={data}
+                    required
+                  />
+                  <div className="tabs__buttons">
+                    <button type="submit" onClick={getData2}>
+                      <a href="">SUBMIT</a>
+                    </button>
+                  </div>
+                </div>
+                <div className="form__pic">
+                  <img
+                    src="https://media.istockphoto.com/id/1285843065/vector/online-internet-questionnaire-concept-vector-flat-cartoon-graphic-design-illustration.jpg?s=612x612&w=0&k=20&c=_9e_o7EreCZr3LmPGm57-0NjgVlLH0mJ99DmHiqW7F0="
+                    alt=" "
+                    className="form__pic"
+                  />
                 </div>
               </div>
             </form>
@@ -340,10 +374,12 @@ function Terms() {
         <div class="wrapper">
           <p>What you will be getting ?</p>
           <div class="words">
-            <span>LinkedIn profile building</span>
-            <span>24/7 Support</span>
-            <span>Internship Completion Certificate</span>
-            <span>Capstone Project Intensive</span>
+            <ul>
+              <li>LinkedIn profile building</li>
+              <li>24/7 Support</li>
+              <li>Internship Completion Certificate</li>
+              <li>Capstone Project Intensive</li>
+            </ul>
           </div>
         </div>
         <div className="wrapper_2">
