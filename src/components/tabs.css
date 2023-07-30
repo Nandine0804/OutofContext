@@ -13,8 +13,6 @@
     border: 1px solid rgba(0, 0, 0, 0.274);
 }
 
-p {}
-
 .terms {
     padding: 100px 50px;
     min-width: 100%;
@@ -235,7 +233,9 @@ p {}
 
 @media screen and (max-width:768px) {
     .terms h1 {
-        font-size: 15px;
+        font-size: 20px;
+        margin-top: 30px;
+        margin-bottom: 35px;
     }
     .tab__container {
         margin: 20px 20px;
@@ -275,7 +275,8 @@ p {}
         font-size: 14px;
     }
     .tabs__buttons button {
-        font-size: 13px;
+        font-size: 14px;
+        width: 100%;
     }
     .tab__content h2 {
         font-size: 18px;
@@ -297,7 +298,7 @@ p {}
     display: flex;
     flex-direction: row;
     place-items: center;
-    font-size: 25px;
+    font-size: 23px;
     text-transform: capitalize;
     color: black;
     background-size: cover;
@@ -310,7 +311,7 @@ p {}
     background: -webkit-linear-gradient(#05326a, #2a0252);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 30px;
+    font-size: 28px;
     letter-spacing: 0.9px;
     line-height: 1.3em;
     width: 90%;
@@ -321,7 +322,7 @@ p {}
 .wrapper {
     box-sizing: content-box;
     background-color: #ffffff;
-    height: 80px;
+    height: 120px;
     padding: 40px 25px;
     display: flex;
     border-radius: 8px;
@@ -456,7 +457,7 @@ p {}
         display: flex;
         flex-direction: column;
         place-items: center;
-        font-size: 17px;
+        font-size: 18px;
         text-transform: capitalize;
         color: black;
         background-size: cover;
@@ -467,18 +468,18 @@ p {}
     .wrapper {
         box-sizing: content-box;
         background-color: #ffffff;
-        height: 55px;
+        height: 80px;
         padding: 25px 30px;
         display: flex;
         border-radius: 8px;
         box-shadow: 0 20px 25px rgba(0, 0, 0, 0.2);
-        width: 70%;
+        width: 80%;
     }
     .perks h4 {
         background: -webkit-linear-gradient(#05326a, #2a0252);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 19px;
+        font-size: 20px;
         letter-spacing: 0.8px;
         line-height: 1.5em;
         width: 90%;
@@ -511,10 +512,11 @@ p {}
 
 @media screen and (max-width:532px) {
     .perks {
-        font-size: 15px;
+        font-size: 16px;
+        height: 65vh;
     }
     .wrapper_2 p {
-        font-size: 13px;
+        font-size: 16px;
     }
     .wrapper_2 {
         width: 100%;
@@ -524,13 +526,15 @@ p {}
 
 @media screen and (max-width:320px) {
     .perks {
-        font-size: 12px;
+        font-size: 13px;
+        height: 70vh;
     }
     .wrapper_2 p {
-        font-size: 12px;
+        font-size: 13px;
     }
     .wrapper_2 {
         width: 100%;
         margin-top: -40px;
+        margin-bottom: 30px;
     }
 }
