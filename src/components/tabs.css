@@ -189,7 +189,7 @@
     }
     
     .form_con input:not([value=""]) {
-        background-color: rgba(0, 255, 85, 0.412);
+        background-color: rgba(141, 193, 226, 0.412);
         color: rgb(0, 0, 0);
     }
     
