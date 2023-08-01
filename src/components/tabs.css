@@ -189,7 +189,7 @@
     }
     
     .form_con input:not([value=""]) {
-        background-color: rgba(12, 227, 83, 0.531);
+        background-color: rgba(0, 255, 85, 0.412);
         color: rgb(0, 0, 0);
     }
     
@@ -215,7 +215,7 @@
             height: 100%;
             color: #000000;
             font-size: 18px;
-            letter-spacing: 0.7px;
+            letter-spacing: 0.5px;
             line-height: 1.6em;
             width: 100%;
         }
@@ -239,8 +239,9 @@
             margin-right: 20px;
         }
         .tabs__forms input {
-            padding: 35px;
+            padding: 18px;
             width: 100%;
+            font-size: 16px;
         }
     }
     
@@ -279,7 +280,7 @@
         }
         .tabs__forms input {
             width: 100%;
-            font-size: 16px;
+            font-size: 13px;
         }
         .tabs__list_perks ul {
             width: 100%;
@@ -292,17 +293,17 @@
             width: 100%;
         }
         .tab__content h2 {
-            font-size: 18px;
+            font-size: 16px;
             width: 100%;
         }
         .tab__content p {
             width: 100%;
             height: 100%;
             color: #000000;
-            font-size: 15px;
-            letter-spacing: 0.6px;
+            font-size: 13px;
             line-height: 1.6em;
             width: 100%;
+            text-align: justify;
         }
     }
     
@@ -313,11 +314,13 @@
         place-items: center;
         font-size: 23px;
         text-transform: capitalize;
-        color: black;
+        color: rgba(135, 132, 207, 0.419);
         background-size: cover;
         background-position: center;
         padding: 50px 100px;
         gap: 40px;
+        letter-spacing: 0.6px;
+        line-height: 1.4em;
     }
     
     .perks h4 {
@@ -329,41 +332,50 @@
         line-height: 1.3em;
         width: 90%;
         text-align: left;
-        margin-bottom: -50px;
+        margin-bottom: 20px;
+    }
+    
+    .wrapper p {
+        margin-bottom: 10px;
     }
     
     .wrapper {
         box-sizing: content-box;
-        background-color: #ffffff;
+        background-image: url('https://e0.pxfuel.com/wallpapers/107/351/desktop-wallpaper-purple-gradient-background-dark-purple-gradient.jpg');
         height: 150px;
         padding: 40px 25px;
         width: 50%;
         display: flex;
         border-radius: 8px;
         box-shadow: 0 20px 25px rgba(0, 0, 0, 0.2);
-        box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+        box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.392);
         flex-direction: column;
+        background-size: cover;
+        background-position: right center;
     }
     
     .wrapper_2 {
         display: flex;
         flex-direction: column;
-        background-color: #ffffff;
-        padding: 20px 25px;
+        background-position: right center;
+        background-image: url('https://e0.pxfuel.com/wallpapers/107/351/desktop-wallpaper-purple-gradient-background-dark-purple-gradient.jpg');
+        padding: 40px 25px;
         box-shadow: 0 20px 25px rgba(0, 0, 0, 0.2);
-        box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-        width: 45%;
+        box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.392);
+        width: 50%;
         height: 230px;
         border-radius: 8px;
+        background-size: cover;
     }
     
     .wrapper_2 p {
-        color: #000000;
-        font-size: 18px;
-        letter-spacing: 0.8px;
+        color: #ffffff;
+        font-size: 17px;
+        letter-spacing: 0.7px;
         line-height: 1.5em;
-        width: 90%;
+        width: 100%;
         margin-top: 10px;
+        font-weight: 600;
     }
     
     .words {
@@ -373,12 +385,12 @@
     .words ul li {
         height: 100%;
         padding-left: 10px;
-        color: #490daa;
+        color: #ffffff;
     }
     
     .wrapper_2 span {
-        color: #2a0252;
-        font-weight: 600;
+        color: #ffffff;
+        font-weight: 400;
     }
     
     @media screen and (max-width:1024px) {
@@ -390,10 +402,12 @@
             place-items: center;
             font-size: 17px;
             text-transform: capitalize;
-            color: black;
+            color: rgba(135, 132, 207, 0.419);
             background-size: cover;
             background-position: center;
             padding: 50px 20px;
+            letter-spacing: 0.6px;
+            line-height: 1.4em;
         }
         .perks h4 {
             background: -webkit-linear-gradient(#05326a, #2a0252);
@@ -415,6 +429,7 @@
             display: flex;
             border-radius: 8px;
             box-shadow: 0 20px 25px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
             margin-bottom: 40px;
         }
         .words li {
@@ -454,11 +469,12 @@
             place-items: center;
             font-size: 18px;
             text-transform: capitalize;
-            color: black;
-            background-size: cover;
+            color: rgba(135, 132, 207, 0.419);
             background-position: center;
             padding: 50px 20px;
             margin-top: 30px;
+            letter-spacing: 0.6px;
+            line-height: 1.4em;
         }
         .wrapper {
             box-sizing: content-box;
@@ -468,6 +484,7 @@
             display: flex;
             border-radius: 8px;
             box-shadow: 0 20px 25px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.603);
             width: 80%;
         }
         .perks h4 {

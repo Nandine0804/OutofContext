@@ -11,7 +11,7 @@ const Hero = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [delta, setDelta] = useState(250 - Math.random() * 100);
   const [index, setIndex] = useState(1);
   const toRotate = [
     "Coding like poetry should be short and concise. ― Santosh Kalwar",
@@ -20,7 +20,7 @@ const Hero = () => {
     "Clean code always looks like it was written by someone who cares. — Robert C. Martin",
     "Of course, bad code can be cleaned up. But it’s very expensive.” — Robert C. Martin",
   ];
-  const period = 500;
+  const period = 300;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -53,7 +53,7 @@ const Hero = () => {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setIndex(1);
-      setDelta(500);
+      setDelta(300);
     } else {
       setIndex((prevIndex) => prevIndex + 1);
     }

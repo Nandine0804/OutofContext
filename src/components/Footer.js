@@ -12,31 +12,34 @@ const Footer = () => {
           <div className="footer__left">
             <h4>SKILL BREWERY INTERNSHIP PROGRAMME</h4>
             <ul>
-              <li>&gt; ABOUT</li>
-              <li>&gt; INTERNSHIP PROGRAMME</li>
-              <li>&gt; FEEDBACK</li>
+              <li>
+                <a href="#about">&gt; ABOUT</a>
+              </li>
+              <li>
+                <a href="#terms">&gt; INTERNSHIP PROGRAMME</a>
+              </li>
+              <li>
+                <a href="#feedback">&gt; FEEDBACK</a>
+              </li>
             </ul>
           </div>
           <div className="footer__right">
             <span className="navbar-text">
               <div className="social-icon">
                 <h3>Follow us on : </h3>
-                <a href="https://www.linkedin.com/in/nandine-s-s-228032226">
+                <a href="https://www.linkedin.com/school/codevita-live/">
                   <img src={navIcon1} alt=""></img>
                 </a>
-                
-                <a href="https://discord.gg/QdDHgrDZ">
+
+                <a href="https://www.instagram.com/codevitalive/">
                   <img src={navIcon3} alt=""></img>
                 </a>
-                
-                <a href="https://discord.gg/QdDHgrDZ">
+
+                <a href="https://www.facebook.com/codevitalive">
                   <img src={navIcon4} alt=""></img>
                 </a>
-                <a href="https://discord.gg/QdDHgrDZ">
-                  <img
-                    src={navIcon5}
-                    alt=""
-                  ></img>
+                <a href="https://www.youtube.com/channel/UCi2AzaYuWFF5doDCoT2iWvA/featured">
+                  <img src={navIcon5} alt=""></img>
                 </a>
                 {/* <a href="">
                   <i class="fa-brands fa-youtube"></i>

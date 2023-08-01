@@ -376,10 +376,10 @@ function Terms() {
           <p>What you will be getting ?</p>
           <div class="words">
             <ul>
-              <li>LinkedIn profile building</li>
-              <li>24/7 Support</li>
-              <li>Internship Completion Certificate</li>
-              <li>Capstone Project Intensive</li>
+              <li>- LinkedIn profile building</li>
+              <li>- 24/7 Support</li>
+              <li>- Internship Completion Certificate</li>
+              <li>- Capstone Project Intensive</li>
             </ul>
           </div>
         </div>

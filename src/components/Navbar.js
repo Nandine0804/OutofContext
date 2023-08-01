@@ -34,7 +34,7 @@ function BasicExample() {
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
-        <Navbar.Brand className="brand"><a href="" className="logo">SKILL BREWERY</a></Navbar.Brand>
+        <Navbar.Brand className="brand"><a href="#home" className="logo">SKILL BREWERY</a></Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
@@ -43,7 +43,7 @@ function BasicExample() {
             <Nav.Link
               href="#about"
               className={
-                activeState === "home" ? "active navbar-link" : "navbar-link"
+                activeState === "about" ? "active navbar-link" : "navbar-link"
               }
             >
               ABOUT
