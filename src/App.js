@@ -11,21 +11,33 @@ import Terms from "./components/Terms";
 import Skills from "./components/SkillsAnimation";
 //import Perks from './components/Perks';
 import Footer from "./components/Footer";
+import Loader from "./components/Loader";
+
 function App() {
+   const [loading, setLoading] = useState(false);
+   useEffect(() => {
+     setLoading(true);
+     setTimeout(() => {
+       setLoading(false);
+     }, 5000);
+   }, []);
   return (
     <div className="App">
+       {loading ? (
+      <Loader color={"white"} size={"500px"} loading={loading} />
+      ) : (
+          <div className="App">
       <Navbar />
       <Hero />
       <Body />
       <Terms />
-    
-      <Skills/>
+      <Skills />
       <Banner />
-
       <Feedback />
       <Contact />
-      
-      <Footer />
+            <Footer />
+            </div>
+      )}
     </div>
   );
 }

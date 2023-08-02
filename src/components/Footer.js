@@ -49,7 +49,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer__copy">
-          © Codevita Live, All Right Reserved. Designed By Nandine S S
+          © Codevita Live, All Right Reserved. Designed By WEBZZ
         </div>
       </div>
     </div>

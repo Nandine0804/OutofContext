@@ -1,10 +1,8 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Image from "../assets/img/image.png";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 
-import Img1 from "../assets/img/img2.png";
 import TrackVisibility from "react-on-screen";
 
 const Hero = () => {

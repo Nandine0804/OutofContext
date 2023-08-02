@@ -94,6 +94,7 @@ function Terms() {
   return (
     <div className="terms" id="terms">
       <h1>CHOOSE YOUR INTERNSHIP PROGRAMME TRACK</h1>
+    
       <div className="tab__container">
         <div className="tab__bloc-tabs">
           <button
@@ -220,7 +221,7 @@ function Terms() {
                   <input
                     type="date"
                     className="form__name"
-                    placeholder="When you would like to join dd/mm/yyyy"
+                    placeholder="When you would like to join?"
                     id="form_date"
                     name="Date"
                     value={user.Date}

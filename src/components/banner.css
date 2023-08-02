@@ -1,40 +1,79 @@
 .banner__pic {
-    background-image: url('https://assets.kpmg.com/is/image/kpmg/digital-laptop-blue-banner:cq5dam.web.2000.500');
+    background-color: rgb(69, 1, 125);
     width: 100%;
     height: 40%;
     padding: 140px 100px;
+    background-position: top center;
+    background-size: cover;
+    box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.banner__pic hr {
+    width: 250px;
+    line-height: 90%;
+    height: 10px;
+    border-top: 5px solid white;
+    border-radius: 20px 20px 20px 20px;
 }
 
 .banner__con {
     display: flex;
     flex-direction: row;
+    border-radius: 30px;
+    font-size: 15px;
+    margin-top: 10px;
 }
 
 .banner__con p {
     color: #ffffff;
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
     width: 80%;
 }
 
+.cir {
+    background-color: rgb(255, 255, 255);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin-top: 10px;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    position: absolute;
+    right: 5%;
+    box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.439);
+}
+
 @media screen and (max-width:1024px) {
     .banner__pic {
-        background-image: url('https://assets.kpmg.com/is/image/kpmg/digital-laptop-blue-banner:cq5dam.web.2000.500');
         width: 100%;
-        height: 40%;
+        height: 60%;
         padding: 80px 40px;
-        background-position: center;
+        background-color: rgb(69, 1, 125);
     }
 }
 
 @media screen and (max-width:768px) {
+    .banner__pic {
+        width: 100%;
+        height: 60%;
+        padding: 80px 40px;
+        background-color: rgb(69, 1, 125);
+    }
     .banner__con p {
         color: #ffffff;
         font-size: 15px;
         letter-spacing: 0.8px;
         line-height: 1.5em;
         width: 100%;
-        margin-top: 20px;
+        margin-top: 10px;
+    }
+    .cir {
+        right: 10%;
+        width: 45px;
+        height: 45px;
+        padding: 5px;
     }
 }

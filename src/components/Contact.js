@@ -1,6 +1,5 @@
 import { useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import contact from "../assets/img/contact.png";
 import "animate.css";
 import emailjs from "@emailjs/browser";
 import TrackVisibility from "react-on-screen";
