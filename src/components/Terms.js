@@ -42,7 +42,7 @@ function Terms() {
       "https://skill-1e6ff-default-rtdb.firebaseio.com/UserData.json",
       options
     );
-    if (res && user.length !== 0) {
+    if (res && user.length!== '') {
       alert("Thank you for showing interest for data science!!");
       setUser({
         Name: "",
@@ -174,7 +174,7 @@ function Terms() {
                 </a>
               </button>
             </div>
-            <form method="POST">
+            <form method="POST" onSubmit={getData1}>
               <div className="form_con">
                 <div className="tabs__forms" id="fill">
                   <h4>Kindly fill up these details if you're interested.</h4>
@@ -229,7 +229,7 @@ function Terms() {
                     required
                   />
                   <div className="tabs__buttons">
-                    <button type="submit" onClick={getData1}>
+                    <button type="submit">
                       <a href="">SUBMIT</a>
                     </button>
                   </div>
@@ -300,7 +300,7 @@ function Terms() {
               </button>
             </div>
 
-            <form method="POST">
+            <form method="POST" onSubmit={getData2}>
               <div className="form_con">
                 <div className="tabs__forms">
                   <h4>Kindly fill up these details if you're interested.</h4>
@@ -355,7 +355,7 @@ function Terms() {
                     required
                   />
                   <div className="tabs__buttons">
-                    <button type="submit" onClick={getData2}>
+                    <button type="submit">
                       <a href="">SUBMIT</a>
                     </button>
                   </div>
