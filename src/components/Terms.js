@@ -230,7 +230,7 @@ function Terms() {
                   />
                   <div className="tabs__buttons">
                     <button type="submit">
-                      <a href="">SUBMIT</a>
+                      SUBMIT
                     </button>
                   </div>
                 </div>
@@ -356,7 +356,7 @@ function Terms() {
                   />
                   <div className="tabs__buttons">
                     <button type="submit">
-                      <a href="">SUBMIT</a>
+                      SUBMIT
                     </button>
                   </div>
                 </div>

@@ -142,6 +142,10 @@
         background-color: rgb(14, 170, 14);
     }
     
+    .tabs__buttons button {
+        color: white;
+    }
+    
     .tabs__buttons button a {
         color: white;
     }
