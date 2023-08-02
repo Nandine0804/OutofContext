@@ -94,7 +94,7 @@ function Terms() {
   return (
     <div className="terms" id="terms">
       <h1>CHOOSE YOUR INTERNSHIP PROGRAMME TRACK</h1>
-    
+
       <div className="tab__container">
         <div className="tab__bloc-tabs">
           <button
@@ -377,19 +377,30 @@ function Terms() {
           <p>What you will be getting ?</p>
           <div class="words">
             <ul>
-              <li>- LinkedIn profile building</li>
-              <li>- 24/7 Support</li>
-              <li>- Internship Completion Certificate</li>
-              <li>- Capstone Project Intensive</li>
+              <li>
+                <b>&gt;</b> LinkedIn profile building
+              </li>
+              <li>
+                {" "}
+                <b>&gt;</b> 24/7 Support
+              </li>
+              <li>
+                {" "}
+                <b>&gt;</b> Internship Completion Certificate
+              </li>
+              <li>
+                {" "}
+                <b>&gt;</b> Capstone Project Intensive
+              </li>
             </ul>
           </div>
         </div>
         <div className="wrapper_2">
           <p>
-            - Commitment : <span>5-6 hours a week/1 month</span>
+            &gt; Commitment : <span>5-6 hours a week/1 month</span>
           </p>
           <p>
-            - Ideal For :
+            &gt; Ideal For :
             <span>
               {" "}
               Students pursuing any technical/managerial field at a
@@ -398,7 +409,7 @@ function Terms() {
           </p>
 
           <p>
-            - Pricing : <span>Free</span>
+            &gt; Pricing : <span>Free</span>
           </p>
         </div>
       </div>
