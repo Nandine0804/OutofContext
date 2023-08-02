@@ -1,5 +1,5 @@
 .banner__pic {
-    background-color: rgb(69, 1, 125);
+    background-image: url('https://static.vecteezy.com/system/resources/previews/000/829/812/original/binary-code-banner-vector.jpg');
     width: 100%;
     height: 40%;
     padding: 140px 100px;
@@ -56,7 +56,7 @@
         width: 100%;
         height: 60%;
         padding: 80px 40px;
-        background-color: rgb(69, 1, 125);
+        background-image: url('https://static.vecteezy.com/system/resources/previews/000/829/812/original/binary-code-banner-vector.jpg');
     }
     .cir {
         width: 45px;
@@ -71,7 +71,7 @@
         width: 100%;
         height: 60%;
         padding: 80px 40px;
-        background-color: rgb(69, 1, 125);
+        background-image: url('https://static.vecteezy.com/system/resources/previews/000/829/812/original/binary-code-banner-vector.jpg');
     }
     .banner__con p {
         color: #000000;
