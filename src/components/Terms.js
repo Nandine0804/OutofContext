@@ -99,7 +99,7 @@ function Terms() {
         Date: "",
       });
     } else {
-      alert("ERROR OCCURED.");
+      Swal.fire("ERROR OCCURED.");
     }
     e.preventDefault();
   };
