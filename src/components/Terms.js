@@ -1,4 +1,7 @@
 import { useState } from "react";
+import Swal from "sweetalert2";
+//import Swal from "sweetalert2/dist/sweetalert2.js";
+
 import "./tabs.css";
 function Terms() {
   const [toggleState, setToggleState] = useState(1);
@@ -42,8 +45,13 @@ function Terms() {
       "https://skill-1e6ff-default-rtdb.firebaseio.com/UserData.json",
       options
     );
-    if (res && user.length!== '') {
-      alert("Thank you for showing interest for data science!!");
+    if (res && user.length !== "") {
+      Swal.fire(
+        "Hurray!",
+        "Thank You for registering for Data Science FastTrack",
+        "success"
+      );
+      console.log("Done");
       setUser({
         Name: "",
         Deg: "",
@@ -54,7 +62,7 @@ function Terms() {
     } else if (user.length.trim() === 0) {
       console.log("Please enter something");
     } else {
-      alert("Something happened..");
+      Swal.fire("Something happened..");
     }
   };
   const getData2 = (e) => {
@@ -78,7 +86,11 @@ function Terms() {
       options
     );
     if (res) {
-      alert("Thank you for showing interest for cyber secruity!!");
+      Swal.fire(
+        "Hurray!",
+        "Thank You for registering for Cybersecurity Evangelist Live",
+        "success"
+      );
       setUser({
         Name: "",
         Deg: "",
@@ -229,9 +241,7 @@ function Terms() {
                     required
                   />
                   <div className="tabs__buttons">
-                    <button type="submit">
-                      SUBMIT
-                    </button>
+                    <button type="submit">SUBMIT</button>
                   </div>
                 </div>
                 <div className="form__pic">
@@ -355,9 +365,7 @@ function Terms() {
                     required
                   />
                   <div className="tabs__buttons">
-                    <button type="submit">
-                      SUBMIT
-                    </button>
+                    <button type="submit">SUBMIT</button>
                   </div>
                 </div>
                 <div className="form__pic">
